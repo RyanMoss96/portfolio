@@ -1,4 +1,5 @@
 import About from './containers/About';
+import Contact from './containers/Contact';
 import Nav from './containers/Nav';
 import Portfolio from './containers/Portfolio';
 import Skill from './containers/Skills';
@@ -11,6 +12,7 @@ function App() {
         <About />
         <Skill />
         <Portfolio />
+        <Contact />
       </main>
     </div>
   );
