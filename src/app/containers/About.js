@@ -9,7 +9,7 @@ function About() {
             <div className='max-w-md mb-auto space-y-5'>
                 <h1 className='text-5xl font-bold md:text-7xl'>Ryan Moss</h1>
                 <p className='tracking-wide leading-relaxed'>
-                    I have over 5 years experience in Software Development working with both APIs and ReactJS UIs. Take a look at my Porfolio to see examples of the work I have done. Use the contact form below to see how I can help take your business online! Prices starting at £299.
+                Etiam leo nibh, aliquet laoreet sapien et, pellentesque consectetur ante. Integer ullamcorper aliquam sem a molestie. In id urna id lacus sagittis sagittis sed sit amet est. Nunc non lobortis ligula. Nulla sed auctor ligula. Proin finibus odio diam, non faucibus odio tempor id. Phasellus egestas nibh lacus, porta cursus enim pretium ut. Aenean cursus neque sit amet mollis condimentum. Suspendisse potenti. Sed ultrices ante in lacus venenatis pulvinar.
                 </p>
             </div>
         </section>
