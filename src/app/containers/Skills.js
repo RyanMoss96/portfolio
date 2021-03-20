@@ -23,9 +23,9 @@ const Skill = () => {
           <img src='./images/reactjs.svg' alt='' loading='lazy' className='w-16 mb-1' width='64px' height='64px' />
           ReactJS
         </div>
-        <div className='flex flex-col items-center' tabIndex='0' role='img' aria-label='MongoDB'>
-          <img src='./images/mongodb.svg' alt='' loading='lazy' className='w-16 mb-1' width='64px' height='64px' />
-          MongoDB
+        <div className='flex flex-col items-center' tabIndex='0' role='img' aria-label='golang'>
+          <img src='./images/go_white.svg' alt='' loading='lazy' className='w-16 mb-1' width='64px' height='64px' />
+          golang
         </div>
         <div className='flex flex-col items-center' tabIndex='0' role='img' aria-label='PostgreSQL'>
           <img src='./images/postgresql.svg' alt='' loading='lazy' className='w-16 mb-1' width='64px' height='64px' />
