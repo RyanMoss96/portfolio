@@ -7,7 +7,7 @@ const Portfolio = () => {
         <h2>Projects</h2>
       </header>
       <div className='my-7 grid gap-5 grid-cols-3 md:grid-cols-6'>
-        <p>test</p>
+        <p>Coming Soon!</p>
       </div>
     </section>
   );

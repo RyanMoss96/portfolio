@@ -2,7 +2,7 @@ import React from 'react';
 
 const Skill = () => {
   return (
-    <section className='my-28  px-5'>
+    <section className='my-28  px-5' id="skills">
       <header className='text-2xl font-bold pt-10'>
         <h2>Skills & Tools</h2>
       </header>
@@ -27,9 +27,9 @@ const Skill = () => {
           <img src='./images/go_white.svg' alt='' loading='lazy' className='w-16 mb-1' width='64px' height='64px' />
           golang
         </div>
-        <div className='flex flex-col items-center' tabIndex='0' role='img' aria-label='PostgreSQL'>
-          <img src='./images/postgresql.svg' alt='' loading='lazy' className='w-16 mb-1' width='64px' height='64px' />
-          PostgreSQL
+        <div className='flex flex-col items-center' tabIndex='0' role='img' aria-label='Kotlin'>
+          <img src='./images/kotlin.svg' alt='' loading='lazy' className='w-16 mb-1' width='64px' height='64px' />
+          Kotlin
         </div>
       </div>
     </section>

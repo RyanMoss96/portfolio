@@ -6,6 +6,11 @@ function Nav() {
             <div>
                 <ul className='flex flex-row space-x-10 md:space-x-10 md:text-xl justify-center md:justify-end font-thin'>
                     <li>
+                        <a href='#skills' className='py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg'>
+                            Skills
+                    </a>
+                    </li>
+                    <li>
                         <a href='#projects' className='py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg'>
                             Portfolio
                     </a>
@@ -15,11 +20,11 @@ function Nav() {
                             Contact
                 </a>
                     </li>
-                    <li>
-                        <a href='./Resume - Theelipan Prabakar.pdf' target='_blank' rel='noreferrer' className='py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg'>
-                            Resume
+                    {/* <li>
+                        <a href='./cv.pdf' target='_blank' rel='noreferrer' className='py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg'>
+                            CV
                 </a>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </nav>

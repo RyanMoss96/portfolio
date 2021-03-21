@@ -1,6 +1,11 @@
 import React from 'react';
 
 function Contact() {
+    const submitContactForm = event => {
+        console.log('on click');
+        console.log(event);
+    };
+
     return (
         <section className='my-28  px-5' id="contact">
             <header className='text-2xl font-bold pt-10'>
@@ -17,7 +22,7 @@ function Contact() {
                             <input type='email' name='email' id='email' className='gradient' required></input>
                             <label htmlFor='message'>Message</label>
                             <textarea name='message' id='message' cols='25' rows='5' className='gradient' required></textarea>
-                            <button type='submit' className='border border-gray-500 p-2 rounded-lg w-auto mr-auto shadow-md'>
+                            <button type='button' onClick={submitContactForm} className='border border-gray-500 p-2 rounded-lg w-auto mr-auto shadow-md'>
                                 Send Message
                         </button>
                         </form>
