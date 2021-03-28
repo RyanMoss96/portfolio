@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/email",
+            "lambdaFunction": "sendemail",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/email"
+        }
+    ],
+    "resourceName": "sendemail",
+    "apiName": "sendemail",
+    "functionArns": [
+        {
+            "lambdaFunction": "sendemail"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-amplify12e28fe2940a4-staging-171652-authRole",
+        "unAuthRoleName": "amplify-amplify12e28fe2940a4-staging-171652-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "sendemail",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
