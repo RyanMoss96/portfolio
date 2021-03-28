@@ -10,7 +10,9 @@ const tracking = 'UA-60022979-1';
 
 function App() {
   useEffect(() => {
+    console.log('App Use Effect')
     ReactGA.initialize(tracking);
+    ReactGA.pageview(window.location.pathname + window.location.search);
   });
 
   return (
