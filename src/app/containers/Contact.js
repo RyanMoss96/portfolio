@@ -20,9 +20,9 @@ function Contact() {
         <section className='my-28  px-5' id="contact">
             <header className='text-2xl font-bold pt-10'>
                 <h2>Get in Touch</h2>
-                <p className="text-base font-thin">See how I can help move your business online!</p>
+                <p className="text-base font-thin">This Portfolio site is still in development and a contact form is coming soon! In the meantime you can get in touch with me via mail@ryanmoss.co.uk</p>
             </header>
-            <div className='flex flex-col flex-wrap md:flex-row justify-between'>
+            {/* <div className='flex flex-col flex-wrap md:flex-row justify-between'>
                 <div className='bg-gray px-5 py-10 md:py-8 sm:p-8 my-2 shadow-lg w-full '>
                     <form className='flex flex-col space-y-3 m-auto w-full' name='contact' method='post'>
                         <input type='hidden' name='form-name' value='contact' />
@@ -36,8 +36,8 @@ function Contact() {
                             Send Message
                         </button>
                     </form>
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
         </section>
     );
 }
