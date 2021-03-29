@@ -22,7 +22,7 @@ exports.handler = async function (event) {
       return {
         statusCode: 200,
         headers: {
-            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Origin": "https://www.ryanmoss.co.uk",
             "Access-Control-Allow-Headers": "*"
         },
         body: event.body,
