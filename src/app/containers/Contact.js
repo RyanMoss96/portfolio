@@ -1,9 +1,9 @@
 import React from 'react';
-import Amplify, { API } from "aws-amplify";
-import aws_exports from "../../aws-exports";
+// import Amplify, { API } from "aws-amplify";
+// import aws_exports from "../../aws-exports";
 // import { withAuthenticator } from "aws-amplify-react";
 
-Amplify.configure(aws_exports);
+// Amplify.configure(aws_exports);
 
 
 function Contact() {
@@ -11,9 +11,9 @@ function Contact() {
         console.log('on click');
         console.log(event);
 
-        API.get('sendemail', 'email', {})
-            .then(response => console.log(response))
-            .catch(error => console.log(error));
+        // API.get('sendemail', 'email', {})
+        //     .then(response => console.log(response))
+        //     .catch(error => console.log(error));
     };
 
     return (
