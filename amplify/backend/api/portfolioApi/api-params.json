@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/",
+            "lambdaFunction": "portfolioSendEmail",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/"
+        }
+    ],
+    "resourceName": "portfolioApi",
+    "apiName": "portfolioApi",
+    "functionArns": [
+        {
+            "lambdaFunction": "portfolioSendEmail"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-amplify158544813ccd4-staging-174843-authRole",
+        "unAuthRoleName": "amplify-amplify158544813ccd4-staging-174843-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "portfolioSendEmail",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
