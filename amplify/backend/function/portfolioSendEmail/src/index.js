@@ -2,22 +2,25 @@ var aws = require("aws-sdk");
 var ses = new aws.SES({ region: "eu-west-2" });
 
 exports.handler = async (event) => {
+    const eventBody = JSON.parse(event.body);
     var params = {
         Destination: {
             ToAddresses: ["mail@ryanmoss.co.uk"],
         },
         Message: {
             Body: {
-                Text: { Data: 
-                    `A new Contact Form Submission has been received by ${event.name} with the following email ${event.email} and message ${event.message}` },
+                Text: {
+                    Data:
+                        `A new Contact Form Submission has been received by ${eventBody.name} with the following email ${eventBody.email} and message ${eventBody.message}`
+                },
             },
 
-            Subject: { Data: `Contact Form Submission by ${event.name}` },
+            Subject: { Data: `Contact Form Submission by ${eventBody.name}` },
         },
         Source: "mail@ryanmoss.co.uk",
     };
 
-    const result = await ses.sendEmail(params).promise()
+    const result = await ses.sendEmail(params).promise();
 
     const response = {
         statusCode: 200,
@@ -25,7 +28,7 @@ exports.handler = async (event) => {
             "Access-Control-Allow-Origin": "*",
             "Access-Control-Allow-Headers": "*"
         },
-        body: result,
+        body: JSON.stringify(result),
     };
     return response;
 };
