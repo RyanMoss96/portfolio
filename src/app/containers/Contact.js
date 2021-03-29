@@ -11,6 +11,7 @@ function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [response, setResponse] = useState(null);
 
     const submitContactForm = event => {
         event.preventDefault();
@@ -24,22 +25,24 @@ function Contact() {
         };
 
         API.post('portfolioApi', '', contactMessage)
-            .then(response => console.log(response))
-            .catch(error => console.log(error));
+            .then(response => setResponse('Thank you for your message! I will be in touch soon!'))
+            .catch(error => setResponse('There seems to be an issue with my contact form! Please try again or email me directly at mail@ryanmoss.co.uk'));
     };
 
     return (
         <section className='my-28  px-5' id="contact">
             <header className='text-2xl font-bold pt-10'>
                 <h2>Get in Touch</h2>
-                {/* <p className="text-base font-thin">This Portfolio site is still in development and a contact form is coming soon! In the meantime you can get in touch with me via mail@ryanmoss.co.uk</p> */}
+                {response &&
+                    <p className="text-base font-thin">{response}</p>
+                }
             </header>
             <div className='flex flex-col flex-wrap md:flex-row justify-between'>
                 <div className='bg-gray px-5 py-10 md:py-8 sm:p-8 my-2 shadow-lg w-full '>
                     <form className='flex flex-col space-y-3 m-auto w-full' name='contact' onSubmit={submitContactForm}>
                         <input type='hidden' name='form-name' value='contact' />
                         <label htmlFor='name'>Name</label>
-                        <input type='text' name='name' id='name' className='gradient' onChange={event => setName(event.target.value)}  required></input>
+                        <input type='text' name='name' id='name' className='gradient' onChange={event => setName(event.target.value)} required></input>
                         <label htmlFor='email'>Email</label>
                         <input type='email' name='email' id='email' className='gradient' onChange={event => setEmail(event.target.value)} required></input>
                         <label htmlFor='message'>Message</label>
