@@ -14,7 +14,6 @@ exports.handler = async (event) => {
                         `A new Contact Form Submission has been received by ${eventBody.name} with the following email ${eventBody.email} and message ${eventBody.message}`
                 },
             },
-
             Subject: { Data: `Contact Form Submission by ${eventBody.name}` },
         },
         Source: "mail@ryanmoss.co.uk",
