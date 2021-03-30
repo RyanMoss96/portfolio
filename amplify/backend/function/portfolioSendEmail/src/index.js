@@ -21,10 +21,12 @@ exports.handler = async (event) => {
 
     const result = await ses.sendEmail(params).promise();
 
+    console.log(result);
+
     const response = {
         statusCode: 200,
         headers: {
-            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Origin": "https://www.ryanmoss.co.uk",
             "Access-Control-Allow-Headers": "*"
         },
         body: JSON.stringify(result),

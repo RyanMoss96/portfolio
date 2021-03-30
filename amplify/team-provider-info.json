@@ -15,7 +15,7 @@
       "function": {
         "portfolioSendEmail": {
           "deploymentBucketName": "amplify-amplify158544813ccd4-staging-174843-deployment",
-          "s3Key": "amplify-builds/portfolioSendEmail-474b6a5772336230656a-build.zip"
+          "s3Key": "amplify-builds/portfolioSendEmail-52395a70444335503750-build.zip"
         }
       }
     }
